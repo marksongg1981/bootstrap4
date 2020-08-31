@@ -16,7 +16,175 @@
       <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web</p>
     </div>
   </div>
+  <br>
+
   <div class="jumbotron">
+    <h2>Spinner Buttons</h2>
+    <p>Yor can also add spinners to a button, with or without text:</p>
+    <button type="button" class="btn btn-primary"><span class="spinner-border spinner-border-sm"></span></button>
+    <button type="button" class="btn btn-primary"><span class="spinner-border spinner-border-sm"></span> Loading</button>
+    <button type="button" class="btn btn-primary"><span class="spinner-grow spinner-grow-sm"></span> Loading</button>
+    <button type="button" class="btn btn-primary" disabled><span class="spinner-border spinner-border-sm"></span> Loading</button>
+    <button type="button" class="btn btn-primary" disabled><span class="spinner-grow spinner-grow-sm"></span> Loading</button>
+  </div>
+
+  <div class="container">
+    <h2>Spinner Size</h2>
+    <p>Use (.spinner-border + .spinner-border-sm) or (.spinner-grow + .spinner-grow-sm) to create a small spinner:</p>
+    <div class="spinner-border spinner-border-sm"></div>
+    <div class="spinner-grow spinner-grow-sm"></div>
+  </div>
+
+  <div class="jumbotron">
+    <h2>Growing Spinners</h2>
+    <p>Use the .spinner-grow class if you want the spinner/loader to grow instead of spin</p>
+    <div class="spinner-grow spinner-grow-sm text-muted"></div>
+    <div class="spinner-grow spinner-grow-sm text-success"></div>
+    <div class="spinner-grow spinner-grow-sm text-info"></div>
+    <div class="spinner-grow spinner-grow-sm text-primary"></div>
+    <div class="spinner-grow spinner-grow-sm text-secondary"></div>
+    <div class="spinner-grow spinner-grow-sm text-danger"></div>
+    <div class="spinner-grow spinner-grow-sm text-warning"></div>
+    <div class="spinner-grow spinner-grow-sm text-light"></div>
+    <div class="spinner-grow spinner-grow-sm text-dark"></div>
+    <br>
+    <div class="spinner-grow text-muted"></div>
+    <div class="spinner-grow text-success"></div>
+    <div class="spinner-grow text-info"></div>
+    <div class="spinner-grow text-primary"></div>
+    <div class="spinner-grow text-secondary"></div>
+    <div class="spinner-grow text-danger"></div>
+    <div class="spinner-grow text-warning"></div>
+    <div class="spinner-grow text-light"></div>
+    <div class="spinner-grow text-dark"></div>
+    <br>
+  </div>
+  <br>
+
+  <div class="jumbotron">
+    <h2>Colored Spinners</h2>
+    <p>Use any text color utilites to add a color to the spinner:</p>
+    <div class="spinner-border text-muted"></div>
+    <div class="spinner-border text-primary"></div>
+    <div class="spinner-border text-success"></div>
+    <div class="spinner-border text-info"></div>
+    <div class="spinner-border text-warning"></div>
+    <div class="spinner-border text-danger"></div>
+    <div class="spinner-border text-secondary"></div>
+    <div class="spinner-border text-dark"></div>
+    <div class="spinner-border text-light"></div>
+  </div>
+  <br>
+
+  <div class="jumbotron">
+    <h2>To create a spinner/loader, use the .spinner-border class</h2>
+    <div class="spinner-border"></div>
+  </div>
+  <br>
+
+  <div class="container">
+    <h2>Multiple Progress Bars</h2>
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width:40%">Free Space</div>
+      <div class="progress-bar bg-warning" style="width:10%">Warning</div>
+      <div class="progress-bar bg-danger" style="width:20%">Danger</div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <h2>Striped Progress Bars</h2>
+    <p>Use .progress-bar-striped class to add stripes to the progress bars.</p>
+    <p>Use .progress-bar-animated class to add animate the progress bars.</p>
+    <div class="progress">
+      <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:70%"></div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <h2>Colored Progress Bars</h2>
+    <p>By default, the progress bar is blue(primary). Use any of the Bootstrap 4 contextual background classes to its color:</p>
+    <!--Blue蓝色-->
+    <div class="progress">
+      <div class="progress-bar" style="width:10%">Blue蓝色</div>
+    </div>
+    <br>
+    <!--Green绿色-->
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width:20%">Green绿色</div>
+    </div>
+    <br>
+    <!--Turquoise青绿色-->
+    <div class="progress">
+      <div class="progress-bar bg-info" style="width:30%">Turquoise青绿色</div>
+    </div>
+    <br>
+    <!--Orange橙色-->
+    <div class="progress">
+      <div class="progress-bar bg-warning" style="width:40%">Orange橙色</div>
+    </div>
+    <br>
+    <!--Red红色 -->
+    <div class="progress">
+      <div class="progress-bar bg-danger" style="width:50%">Red红色</div>
+    </div>
+    <br>
+    <!--White白色 -->
+    <div class="progress">
+      <div class="progress-bar bg-white text-dark" style="width:60%">White白色</div>
+    </div>
+    <br>
+    <!--Grey灰色 -->
+    <div class="progress">
+      <div class="progress-bar bg-secondary" style="width:70%">Grey灰色</div>
+    </div>
+    <br>
+    <!--Light Grey 亮灰色 -->
+    <div class="progress">
+      <div class="progress-bar bg-light text-dark" style="width:80%">Light Grey亮灰色</div>
+    </div>
+    <br>
+    <!--Dark Grey 黑灰色 -->
+    <div class="progress">
+      <div class="progress-bar bg-dark" style="width:90%">Dark Grey 黑灰色</div>
+    </div>
+    <br>
+  </div>
+
+  <div class="container">
+    <h2>Progress Bar Labels</h2>
+    <p>Add text inside the progress bar to show the visible percentage:</p>
+    <div class="progress">
+      <div class="progress-bar" style="width:70%">70%</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Progress Bar Height</h2>
+    <p>The height of the progress bar is 16px by default. Use the CSS height property to change it. Note that you must set the same height for progress container and the progress bar.</p>
+    <div class="progress" style="height:20px">
+      <div class="progress-bar" style="width:40%;height:20px"></div>
+    </div>
+    <br>
+    <div class="progress" style="height:30px">
+      <div class="progress-bar" style="width:40%;height:30px"></div>
+    </div>
+    <br>
+    <div class="progress" style="height:40px">
+      <div class="progress-bar" style="width:40%;height:40px"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Basic Progress Bar</h2>
+    <p>a progress bar can be ueed to show a user how fa along he/she is in the process.</p>
+    <div class="progress">
+      <div class="progress-bar" style="width:70%"></div>
+    </div>
+  </div>
+
+  <div class="container">
     <h2>Badge inside an Button Element</h2>
     <button type="button" class="btn btn-primary">
       Message <span class="badge badge-light">4</span>
