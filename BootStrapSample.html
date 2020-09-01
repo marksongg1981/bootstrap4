@@ -18,6 +18,129 @@
   </div>
   <br>
 
+  <div class="container">
+    <h2>List Group with Badges</h2>
+    <p>Combine <span class="bg-warning">.badge</span> classes with utility/helper classes to add badges inside the list group:</p>
+    <p>Use the <span class="bg-warning">.badge-pill</span> class to make the badges more round:</p>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">Inbox<span class="badge badge-primary badge-pill">12</span></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">Ads<span class="badge badge-secondary badge-pill">50</span></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">Junk<span class="badge badge-info badge-pill">99</span></li>
+    </ul>
+  </div>
+
+  <div class="jumbotron">
+    <h2>Link items with Contextual Classes</h2>
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action list-group-item-success">Success Item</a>
+      <a class="list-group-item list-group-item-action list-group-item-secondary">Secondary Item</a>
+      <a class="list-group-item list-group-item-action list-group-item-info">Info Item</a>
+      <a class="list-group-item list-group-item-action list-group-item-warning">Warning Item</a>
+      <a class="list-group-item list-group-item-action list-group-item-danger">Danger Item</a>
+      <a class="list-group-item list-group-item-action list-group-item-primary">Primary Item</a>
+      <a class="list-group-item list-group-item-action list-group-item-dark">Dark Item</a>
+      <a class="list-group-item list-group-item-action list-group-item-light">Light Item</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Contextual Classes</h2>
+    <p>Contextual classes can be used to color list items:</p>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-success">Success Item</li>
+      <li class="list-group-item list-group-item-secondary">Secondary Item</li>
+      <li class="list-group-item list-group-item-info">Info Item</li>
+      <li class="list-group-item list-group-item-warning">Warning Item</li>
+      <li class="list-group-item list-group-item-danger">Danger Item</li>
+      <li class="list-group-item list-group-item-primary">Primary Item</li>
+      <li class="list-group-item list-group-item-dark">Dark Item</li>
+      <li class="list-group-item list-group-item-light">Light Item</li>
+    </ul>
+  </div>
+
+  <div class="jumbotron">
+    <h2>Horizontal List Groups</h2>
+    <p>If you want the list items to display horizontal instead of vertically add the <span class="bg-warning">.list-group-horizontal</span> class to <span class="bg-warning">.list group</span></p>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item list-group-item-action">First Item</li>
+      <li class="list-group-item list-group-item-action">Second Item</li>
+      <li class="list-group-item list-group-item-action">Third Item</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>Flush / Remove Borders</h2>
+    <p>Use the <span class="bg-warning">.list-group-flush</span> class to remove some borders and rounded corners:</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">First Item</li>
+      <li class="list-group-item">Second Item</li>
+      <li class="list-group-item">Third Item</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>Disabled Item</h2>
+    <p>The <span class="bg-warning">.diabled</span> class adds a lighter text color to the disabled item. And when used on links, it will remove the hover effect:</p>
+    <div class="list-group">
+      <a href="#" class="list-group-item disabled">First Item</a>
+      <a href="#" class="list-group-item disabled">Second Item</a>
+      <a href="#" class="list-group-item list-group-item-action">Third Item</a>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <h2>List Group With Linked Items</h2>
+    <p>To create a list group with linked items, use div instead of ul, a instead of li.Optionally, add the .list-group-item-action class if you want a grey background color on hover:</p>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">First Item</a>
+      <a href="#" class="list-group-item list-group-item-action">Seconde Item</a>
+      <a href="#" class="list-group-item list-group-item-action">Third Item</a>
+    </div>
+  </div>
+  
+  <div class="container">
+    <h2>List Group</h2>
+    <p>The most basic list group is an unordered list with list items:</p>
+    <ul class="list-group">
+      <li class="list-group-item">First item</li>
+      <li class="list-group-item active">Second item</li>
+      <li class="list-group-item">Third item</li>
+    </ul>
+  </div>
+
+  <div class="jumbotron">
+    <h2>Breadcrumbs</h2>
+    <p>Another form for pagination is breadcrumbs:</p>
+    <p>The .breadcrumb and .breadcrumb-item classes indicates the current page's location within a navigational hierarchy</p>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Photos</a></li>
+      <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+      <li class="breadcrumb-item"><a href="#">Italy</a></li>
+      <li class="breadcrumb-item active">Rome</li>
+    </div>
+  </ul>
+
+  <div class="container">
+    <h2>Pagination Alignment</h2>
+    <p>Use .justify-content-center and .justify-content-end to change the alignment of the pagination:</p>
+    <!--Default (left-aligned)-->
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+    <ul class="pagination justify-content-end">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+
   <div class="jumbotron">
     <h2>Pagination Sizing</h2>
     <p>Pagination block can also be sized to a larger or a small size:</p>
