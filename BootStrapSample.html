@@ -60,7 +60,11 @@
         var validation = Array.prototype.filter.call(forms, function(form) {
           form.addEventListener('submit', function(event) {
             if (form.checkValidity() === false) {
+              // jQuery event.preventDefault() 方法
+              // 当点击提交按钮时阻止对表单的提交
               event.preventDefault();
+              // jQuery event.stopPropagation() 方法, 
+              // 阻止事件冒泡到父元素，阻止任何父事件处理程序被执行。
               event.stopPropagation();
             }
             form.classList.add('was-validated');
