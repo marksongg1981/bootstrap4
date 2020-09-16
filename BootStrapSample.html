@@ -17,12 +17,275 @@
       <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web</p>
     </div>
   </div>
+  <div class="container">
+    <h2>Form Control Range</h2>
+    <p>Add the <code>.form-control-range</code> class to <code>input</code></p>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <input type="file" class="form-control-file">
+      </div>
+    </form>
+  </div>
 
+  <br>
+  <div class="jumbotron">
+    <h2>Form Control Range</h2>
+    <p>Add the <code>.form-control-range</code> class to <code>input</code></p>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <input type="range" class="form-control-range">
+      </div>
+    </form>
+  </div>
 
+  <br>
+  <div class="container">
+    <h2>Form Control with Plain Text</h2>
+    <p>Use the <code>.form-control-plaintext</code> if you want to style the input field as plain text:</p>
+    <form class="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control-plaintext" placeholder="Form control with plain text">
+        <br>
+        <input type="text" class="form-control" placeholder="Default form control">
+      </div>
+    </form>
+  </div>
 
+  <br>
+  <div class="jumbotron">
+    <h2>Form Control Sizing</h2>
+    <p>Change the size of the form control with <code>.form-control-sm</code> or <code>.form-control-lg</code> :</p>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control form-control-sm" placeholder="Small form control" name="text1">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control form-control" placeholder="Default form control" name="text1">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control form-control-lg" placeholder="Large form control" name="text1">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 
+  <br>
+  <div class="container">
+    <h2>Bootstrap Select List</h2>
+    <p>Select lists are used if you want to allow the user to pick from multiple options.</p>
+    <p>The following example contains a dropdown list(select list):</p>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="sel1">Select list (select one):</label>
+        <select class="form-control" id="sel1" name="sellist1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+        <br>
+        <label for="sel2">Multiple select list (hold shift to select more than one):</label>
+        <select multiple class="form-control" id="sel2" name="sellist2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+    </form>
+  </div>
 
+  <br>
+  <div class="jumbotron">
+    <h2>Bootstrap Radio Buttons</h2>
+    <p>As with checkboxes, use the <code>form-check-inline</code> class if you want the radio buttons to appear on the same line:</p>
+    <form action="/action_page.php">
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-inline" name="optradio">Option 1
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-inline" name="optradio">Option 2
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-inline" name="optradio" disabled>Option 3
+        </label>
+      </div>
+    </form>
+  </div>
 
+  <br>
+  <div class="container">
+    <h2>Bootstrap Radio Buttons</h2>
+    <p>Radio buttons are used if you want to limit the user to just one selection from a list of preset options.</p>
+    <p>The following example contains three radio buttons. The last option is disabled:</p>
+    <form aciton="/action_page.php">
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" id="opt1" name="optradio">Option 1
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" id="opt2" name="optradio">Option 2
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" id="opt3" name="optradio">Option 3
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" id="opt4" name="optradio" disabled>Option 4
+        </label>
+      </div>
+    </form>
+  </div>
+
+  <br>
+  <div class="jumbotron">
+    <h2>Inline Checkboxes</h2>
+    <p>Use the <code>form-check-inline</code> class if you want the checkboxes to appear on the same line:</p>
+    <form action="/action_page.php">
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="">Option 1
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="">Option 2
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="">Option 3
+        </label>
+      </div>
+
+      <br>
+
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="">Option 4
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="">Option 5
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="">Option 6
+        </label>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>Bootstrap Checkboxes</h2>
+    <p>Checkboxes are used if you want the user to select any number of options from a list of preset options</p>
+    <p>The following example contains three checkboxes. The last option is disabled:</p>
+    <p>Use a wrapper element with <code>class="form-check"</code> to ensure proper margins for labels and checkboxes.</p>
+    <p>Add the <code>.form-check-label</code> class to label elements, and <code>.form-check-input</code> to style checkboxes properly inside the <code>.form-check</code> container.</p>
+    <form action="/action_page.php">
+      <div class="form-check">
+        <label class="form-check-label" for="check1">
+          <input type="checkbox" id="check1" class="form-check-input" name="option1" value="something" checked>Option 1
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="check2">
+          <input type="checkbox" id="check2" class="form-check-input" name="option2" value="something">Option 2
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="check3">
+          <input type="checkbox" id="check3" class="form-check-input" name="option3" value="something" disabled>Option 3 
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <br>
+  <div class="jumbotron">
+    <h2>Bootstrap Textarea</h2>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea id="comment" class="form-control" name="text" rows="5"></textarea>
+      </div>
+    </form>
+  </div>
+
+  <div class="jumbotron">
+    <h2>Bootstrap Checkboxes</h2>
+    <p>Checkboxes are used if you want the user to select any number of options from a list of preset options</p>
+    <p>The following example contains three checkboxes. The last options is disabled:</p>
+  </div>
+
+  <br>
+  <div class="container">
+    <h2>Bootstrap Input</h2>
+    <p>Bootstrap supports all the HTML5 input types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code> and <code>color</code>.</p>
+    <p><strong>Note:</strong> Inputs will NOT be fully styled if their type is not properly declared!</p>
+    <p>The form below contains two input elements; one of type text and one of type password:</p>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <lable>text:</lable>
+        <input type="text" class="form-control" id="usr" name="username" placeholder="Enter name">
+        <lable>datetime-local:</lable>
+        <input type="datetime-local" class="form-control" id="dt" name="datetime">
+        <lable>date:</lable>
+        <input type="date" class="form-control" id="dt" name="datetime">
+        <lable>month:</lable>
+        <input type="month" class="form-control" id="dt" name="datetime">
+        <lable>time:</lable>
+        <input type="time" class="form-control" id="dt" name="datetime">
+        <lable>week:</lable>
+        <input type="week" class="form-control" id="dt" name="datetime">
+        <lable>number:</lable>
+        <input type="number" class="form-control" id="dt" name="datetime">
+        <lable>email:</lable>
+        <input type="email" class="form-control" id="dt" name="datetime">
+        <lable>url:</lable>
+        <input type="url" class="form-control" id="dt" name="datetime">
+        <lable>tel:</lable>
+        <input type="tel" class="form-control" id="dt" name="datetime">
+        <lable>color:</lable>
+        <input type="color" class="form-control" id="dt" name="datetime">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" name="pswd" placeholder="Enter password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <br>
+  <div class="jumbotron">
+    <h2>Bootstrap 4 Form Inputs</h2>
+    <p>Support Form Controls</p>
+    <p>Bootstrap supports the following form controls:</p>
+    <ul>
+      <li>input</li>
+      <li>textarea</li>
+      <li>checkbox</li>
+      <li>radio</li>
+      <li>select</li>
+    </ul>
+  </div>
+
+  <br>
   <div class="container">
     <h2>Form Validation</h2>
     <p>In this example, we use <code>.need-validation</code>, which will add the validation effect AFTER the form has been submitting (if there's anything missing). Note that you will also have to add some jQuery code for this example to work properly:</p>
