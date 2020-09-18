@@ -17,9 +17,170 @@
       <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web</p>
     </div>
   </div>
+
+  <div class="jumbotron">
+    <h2>Input Group Labels</h2>
+    <p>Put labels outside of the input group, and remember that the value of the for attribute should match id of the input:</p>
+    <form action="/action_page.php">
+      <label for="demo">Write your email here:</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Email" id="demo">
+        <div class="input-group-append">
+          <span class="input-group-text">@example.com</span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <br>
   <div class="container">
-    <h2>Form Control Range</h2>
-    <p>Add the <code>.form-control-range</code> class to <code>input</code></p>
+    <h2>Input Group with Dropdown Button</h2>
+    <p>Add a dropdown button in the input group. Note that you don't need the <code>.dropdown</code> wrapper, as you normally would.</p>
+    <form action="/action_page.php">
+      <div class="input-group mt-3 mb-3">
+        <div class="input-group-prepend">
+          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Dropdown button</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </div>
+        <input type="text" class="form-control" placeholder="Username">
+      </div>
+    </form>
+  </div>
+
+  <br>
+  <div class="jumbotron">
+    <h2>Input Group Buttons</h2>
+    <form action="/action_page.php">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-primary" type="button">Basic Button</button>
+        </div>
+        <input type="text" class="form-control" placeholder="Some text">
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-append">
+          <button type="button" class="btn btn-success">Go</button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Something clever..">
+        <div class="input-group-append">
+          <button type="button" class="btn btn-primary">OK</button>
+          <button type="button" class="btn btn-danger">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>Input Group with Checkboxes and Radios</h2>
+    <p>You can also use checkboxes or radio buttons instead of text:</p>
+    <form action="/action_page.php">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox">
+          </div>
+        </div>
+        <input type="text" class="form-control" placeholder="Some text">
+      </div>
+    </form>
+
+    <form class="/action_page.php">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="radio">
+          </div>
+        </div>
+        <input type="text" class="form-control" placeholder="Some text">
+      </div>
+    </form>
+  </div>
+
+  <br>
+  <div class="container">
+    <h2>Multiple Inputs and Helpers</h2>
+    <p>Add multiple inputs or helpers:</p>
+    <form action="/action_page.php">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Person</span>
+        </div>
+        <input class="form-control" placeholder="First Name">
+        <input class="form-control" placeholder="Last Name">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">One</span>
+          <span class="input-group-text">Two</span>
+          <span class="input-group-text">Three</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>Input Group Sizing</h2>
+    <p>Use the <code>.input-group-sm</code> class for small input groups and <code>.input-group-lg</code> for large inputs groups:</p>
+    <form action="/action_page.php">
+      <div class="input-group mb-3 input-group-sm">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Small</span>
+        </div>
+        <input type="text" class="form-control" placeholder="User name">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Default</span>
+        </div>
+        <input type="text" class="form-control" placeholder="User name">
+      </div>
+
+      <div class="input-group mb-3 input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Large</span>
+        </div>
+        <input type="text" class="form-control" placeholder="User name">
+      </div>
+    </form>
+  </div>
+
+  <div class="jumbotron">
+    <h2>Bootstrap 4 Inputs Group</h2>
+    <p>The <code>.input-group</code> class is a container to enhance an input by adding an icon, text or a button in front or behind the input field as a "<code>help text</code>"</p>
+    <form action="/action_page.php">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" id="usr" name="username">
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
+        <div class="input-group-prepend">
+          <span class="input-group-text">@example.com</span>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <br>
+  <div class="container">
+    <h2>Form Control File</h2>
+    <p>Add the <code>.form-control-file</code> class to <code>input</code></p>
     <form action="/action_page.php">
       <div class="form-group">
         <input type="file" class="form-control-file">
