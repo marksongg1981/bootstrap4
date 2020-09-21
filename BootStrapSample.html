@@ -19,6 +19,155 @@
   </div>
 
   <div class="jumbotron">
+    <h2>Custom File</h2>
+    <p>To create a custom file upload, wrap a container element with a class of <mark>.custom-file</mark> around the input with <mark>type="file"</mark>. Then add the <mark>.custom-file-input</mark> to the file input:</p>
+    <form action="/action_page.php">
+      <p>Custom file:</p>
+      <div class="custom-file mb-3">
+        <input type="file" class="custom-file-input" id="customFile" name="filename">
+        <lable class="custom-file-label" for="customFile"></lable>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Add the following code if you want the name of the file appear on select
+    // 向 <.custom-file-input> 元素添加 change 事件处理程序：
+    $(".custom-file-input").on("change", function() {
+      // pop() 方法用于删除并返回数组的最后一个元素
+      // 这里的$(this)是一个JQuery对象
+      var fileName = $(this).val().split("\\").pop();
+      // 查找每个 p 元素的所有类名为 "custom-file-label" 的所有同胞元素：
+      // addClass() 方法向被选元素添加一个或多个class。该方法不会移除已存在的 class 属性，仅仅添加一个或多个 class 属性。
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+  </script>
+    
+
+  <div class="container">
+    <h2>Custom Range</h2>
+    <p>To create a custom range menu, add the <mark>.custom-range</mark> class to an input with type=&lt;ranger&gt;</p>
+    <form action="/action_page.php">
+      <label for="customRange">Custom range</label>
+      <input type="range" class="custom-range" id="customRange" name="points1">
+      <label for=defaultRange"">Default range</label>
+      <input type="range" id="defaultRange" name="points2">
+      <p><button type="submit" class="btn btn-primary">Submit</button></p>
+    </form>
+  </div>
+
+  <div class="jumbotron">
+    <form action="/action_page.php">
+      <select name="cars" class="custom-select custom-select-sm mb-3">
+        <option selected>Small Custom Select Menu</option>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <select name="cars" class="custom-select mb-3">
+        <option selected>Default Custom Select Menu</option>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <select name="cars" class="custom-select custom-select-lg mb-3">
+        <option selected>Large Custom Select Menu</option>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <br>
+  <div class="container">
+    <h2>Custom Select Menu</h2>
+    <p>To create a custom select menu, add the <code>.custom-select</code> class to the &lt;select&gt; element:</p>
+    <form action="/action_page.php">
+      <select name="cars" class="custom-select mb-3">
+        <option selected>Custom Select Menu</option>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br>
+      <select name="cars">
+        <option selected>Default Select Menu</option>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </form>
+  </div>
+
+  <br>
+  <div class="jumbotron">
+    <h2>Inline Custom Form Controls</h2>
+    <p>If you want the custom form control to sit side by side (inline), and the <code>.custom-control-inline</code> to the wrapper/container:</p>
+    <form action="/action_page.php">
+      <div class="custom-control custom-control-inline custom-radio">
+        <input type="radio" class="custom-control-input" id="customRadio1" name="example1">
+        <lable class="custom-control-label" for="customRadio1">Custom radio</lable>
+      </div>
+      <div class="custom-control custom-control-inline custom-radio">
+        <input type="radio" class="custom-control-input" id="customRadio2" name="example2">
+        <lable class="custom-control-label" for="customRadio2">Custom radio</lable>
+      </div>
+      <br><br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <br>
+  <div class="container">
+    <h2>Custom Radio buttons</h2>
+    <p>To create a custom radio button, wrap a container element , like&lt;div&gt;, with a class of <code>.custom-control</code> and <code>.custom-radio</code> around the radio button. Then add the <code>.custom-control-input</code> to the input with type="radio".</p>
+    <form action="/action_page.php">
+      <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="customRadio" name="example1">
+        <label class="custom-control-label" for="customRadio">Custom radio</label>
+      </div>
+      <input type="radio" id="defaultRadio" name="example2">
+      <label for="defaultRadio">Default radio</label>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <br>
+  <div class="jumbotron">
+    <h2>Custom Switch</h2>
+    <p>To create a custom "toggle switch", wrap a container element &lt;div&gt;, with a class of <code>.custom-control</code> and <code>.custom-switch</code> around a checkbox, Then add the <code>.custom-control-input</code> class to the checkbox:</p>
+    <form action="/action_page.php">
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="switch1" name="example">
+        <label class="custom-control-label" for="switch1">Toggle me</label>
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>Bootstrap 4 Custom Forms</h2>
+    <p>Bootstrap 4 comes with customized form elements, that we meant to replace browser defaults:</p>
+    <h2>Custom Checkbox</h2>
+    <p>To create a custom checkbox, wrap a container element, like &lt;div&gt;,with a class of  <code>.custom-control</code> and <code>.custom-checkbox</code> around the checkbox. Then add the <code>.custom-control-input</code> to the input with type="checkbox"</p>
+    <form action="/action_page.php">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+        <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+      </div>
+      <input type="checkbox" id="defaultCheck" name="example2">
+      <label for="defaultCheck">Default checkbox</label>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="jumbotron">
     <h2>Input Group Labels</h2>
     <p>Put labels outside of the input group, and remember that the value of the for attribute should match id of the input:</p>
     <form action="/action_page.php">
