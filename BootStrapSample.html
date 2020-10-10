@@ -47,6 +47,92 @@
   </div>
 
   <div class="jumbotron mt-3">
+    <h2 class="text-success">Top, Middle or Bottom Alignment</h2>
+    <p>Use the flex utilities, <mark>.align-self-*</mark> classes to place the media object on the top, middle or at the bottom:</p>
+    <div class="media border bg-light p-3>">
+      <img src="./img_avatar1.png" class="align-self-start ml-1 mt-1 mr-1" style="width: 60px;">
+      <div class="media-body">
+        <h4>Media Top</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <br>
+    <div class="media border bg-light p-3>">
+      <img src="./img_avatar1.png" class="align-self-center ml-1 mr-1" style="width: 60px;">
+      <div class="media-body">
+        <h4>Media Center</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <br>
+    <div class="media border bg-light p-3>">
+      <img src="./img_avatar1.png" class="align-self-end ml-1 mb-1 mr-1" style="width: 60px;">
+      <div class="media-body">
+        <h4>Media End</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container mt-3">
+    <h2 class="text-success">Right-Aligned Media Image</h2>
+    <p>To right-align the media image, add the image after the <mark>.media-body</mark> container:</p>
+    <div class="media border p-3">
+      <div class="media-body">
+        <h4>John Doe<small><i> Posted on February 19, 2020</i></small></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <img src="./img_avatar3.png" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width: 60px;">
+    </div>
+  </div>
+
+  <br>
+  <div class="jumbotron mt-3">
+    <h2 class="text-success">Nested Media Objects</h2>
+    <p>Media objects can also be nested (a media object inside a media object):</p>
+    <p>To nest media objects, place a new <mark>.media</mark> container inside the <mark>.media-body</mark> container:</p>
+    <div class="media border bg-light p-3">
+      <img src="./img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width: 60px;">
+      <div class="media-body">
+        <h4>John Doe<small><i> Posted on February 19, 2020</i></small></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="media p-3">
+          <img src="./img_avatar2.png" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width: 45px;">
+          <div class="media-body">
+            <h4>Jane Doe<small><i> Posted on February 20, 2020</i></small></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container mt-3">
+    <h1>Bootstrap 4 Media Objects</h1>
+    <p>Bootstrap provides an easy way to align media object (like <mark>image</mark> or <mark>videos</mark>) together with content. Media objects are often used to display blog comments, tweets and so on:</p>
+    <br>
+    <h2 class="text-success">Media Object</h2>
+    <p>To create a media object, add the <mark>.media</mark> class to a container element, and place media content inside a child container with the <mark>.media-body</mark> class. Add padding and margins as needed, with the spacing utilities:</p>
+    <div class="media border p-3">
+      <img src="./img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width: 60px;">
+      <div class="media-body">
+        <h4>John Doe <small><i>Posted on February 19, 2020</i></small></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="jumbotron mt-3">
     <h2>Bootstrap 4 Icons</h2>
     <p>Bootstrap 4 does not have its own icon library (<a href="javascript:void(0)">Glyphicons from Bootstrap 3</a> are not supported in BS4). However, there are many free icon libraries to choose from, such as <mark>Font Awesome</mark> and <mark>Google Material Design Icons</mark>.</p>
     <p><strong>Note:</strong> <mark>link add :"https://use.fontawesome.com/releases/v5.6.3/css/all.css"</mark></p>
