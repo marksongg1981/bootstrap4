@@ -45,7 +45,112 @@
       </div>
     </div>
   </div>
+  <div class="container mt-3">
+    <h2 class="text-success">Filter Anything</h2>
+    <p>Type something in the input field to search for a specific text inside the div element with id="myDIV":</p>
+    <input class="form-control" id="myInput3" type="text" placeholder="Search.." >
+    <div id="myDIV" class="mt-3">
+      <p>I am a paragraph.</p>
+      <div>I am a div element inside div.</div>
+      <button class="btn">I am a button</button>
+      <button class="btn btn-info">I am a other button</button>
+      <p>Other paragraph.</p>
+    </div>
+  </div>
 
+  <script>
+    $(document).ready(function(){
+      $("#myInput3").on("keyup", function(){
+        var value = $(this).val().toLocaleLowerCase();
+        $("#myDIV *").filter(function(){
+          $(this).toggle($(this).text().toLocaleLowerCase().lastIndexOf(value) > -1);
+        });
+      });
+    });
+  </script>
+  <br>
+  <div class="jumbotron mt-3">
+    <h2 class="text-success">Filter Lists</h2>
+    <p>Perform a case-insensitive search for items in a list:</p>
+    <p>Type something in the input field to search the list for specific items:</p>
+    <input class="form-control" id="myInput2" type="text" placeholder="Search..">
+    <br>
+    <ul class="list-group" id="myList">
+      <li class="list-group-item">First item</li>
+      <li class="list-group-item">Second item</li>
+      <li class="list-group-item">Third item</li>
+      <li class="list-group-item">Fourth item</li>
+    </ul>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $("#myInput2").on("keyup", function(){
+        var value = $(this).val().toLocaleLowerCase();
+        $("#myList li").filter(function(){
+          $(this).toggle($(this).text().toLocaleLowerCase().indexOf(value) > -1);
+        });
+      });
+    });
+  </script>
+
+  <br>
+  <div class="container mt-3">
+    <h2>Bootstrap 4 Filters (Advanced)</h2>
+    <p>Bootstrap does not have a component that allows filtering. However, we can use <a href="javascript:void(0)"><u>jQuery</u></a> to filter / search for elements.</p>
+    <h3 class="text-success">Filter Tables</h3>
+    <p>Type somethig in the input field to search the table of for first names, last names or emails:</p>
+    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+    <br>
+    <table class="table border">
+      <thread>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thread>
+      <tbody id="myTable">
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@mail.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooly</td>
+          <td>july@greatstuff.com</td>
+        </tr>
+        <tr>
+          <td>Anja</td>
+          <td>Ravendale</td>
+          <td>a_r@test.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <p><strong>Note:</strong> that we start the search in tbody, to prevent filtering the table headers.</p>
+    <p><strong>Example explained:</strong><mark> We use jQuery to loop through each table rows to check if there are any text values that matches the value of the input field. The <code>toggle</code> method hides the row that does not match the search. We use the <code>toLowerCase()</code> method to convert the text to lower case, which makes the search case insensitive (allows "john", "John", and even "JOHN" on search).</p>
+  </div>
+  <script>
+    $(document).ready(function(){
+      // input=text
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        // table row
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+  
+
+  <br>
   <div class="jumbotron mt-3">
     <h2 class="text-success">Top, Middle or Bottom Alignment</h2>
     <p>Use the flex utilities, <mark>.align-self-*</mark> classes to place the media object on the top, middle or at the bottom:</p>
@@ -3993,3 +4098,4 @@
   </div>
 </body>
 </html>
+
