@@ -45,6 +45,108 @@
       </div>
     </div>
   </div>
+
+  <div class="container mt-3">
+    <h2>Bootstrap 4 Grid Stacked-to-horizontal</h2>
+    <p>We will create a basic grid system that starts out stacked on extra small devices, before becoming horizontal on large devices.</p>
+    <p>The following example shows a simple "<mark>stacked-to-horizontal</mark>" two column layout, meaning it will result in a 50%50% split on all screens, except for extra small screens, which it will automatically stack (100%).</p>
+    <p><strong>Tip: </strong> The numbers in the <mark>.col-sm-*</mark> classes indicates how many columns the div should span (out of 12). So, <mark>.col-sm-1</mark> spans 1 column, <mark>.col-sm-4</mark> spans 4 columns, <mark>.col-sm-6</mark> spans 6 columns, etc</p>
+    <div class="row">
+      <div class="col-sm-6 bg-success">
+        <p>Lorem ipsum...</p>
+      </div>
+      <div class="col-sm-6 bg-warning">
+        <p>Sed ut perspiciatis...</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="continer-fluid  mx-4">
+    <h2>Fluid container</h2>
+    <p><strong>Tip: </strong> You can turn any fixed-width layout into a full-width layout by changing the <mark>.container</mark> class to <mark>.container-fluid</mark>:</p>
+    <div class="row">
+      <div class="col-sm-6 bg-success">
+        <p>Lorem ipsum...</p>
+      </div>
+      <div class="col-sm-6 bg-warning">
+        <p>Sed ut perspiciatis...</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="jumb-fluid mx-5">
+    <h2>Auto Layout Columns</h2>
+    <p>In Bootstrap 4, there is an easy way to create equal width columnsL just use the <code>.col-size</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
+
+    <br>
+    <p class="text-success">Two columns: 50% width on all screens, except for extra small (100% width)</p>
+    <div class="row">
+      <div class="col-sm bg-success">1 of 2</div>
+      <div class="col-sm bg-warning">2 of 2</div>
+    </div>
+
+    <br>
+    <p class="text-success">Four columns: 25% width on all screens, excepion for extra small (100% width)</p>
+    <div class="row">
+      <div class="col-sm bg-success">1 of 4</div>
+      <div class="col-sm bg-warning">2 of 4</div>
+      <div class="col-sm bg-success">3 of 4</div>
+      <div class="col-sm bg-warning">4 of 4</div>
+    </div>
+
+    <br>
+    <p class="text-success">Five columns: 20% width on all screens, excepion for extra small (100% width)</p>
+    <div class="row">
+      <div class="col-sm bg-success">1 of 5</div>
+      <div class="col-sm bg-warning">2 of 5</div>
+      <div class="col-sm bg-success">3 of 5</div>
+      <div class="col-sm bg-warning">4 of 5</div>
+      <div class="col-sm bg-success">5 of 5</div>
+    </div>
+  </div>
+
+  <div class="jumbotron mt-3">
+    <h2>Bootstrap 4 Grid System</h2>
+    <p>Bootstrap's grid system allows up to 12 columns across the page.</p>
+    <p>If you do not want to use all 12 column individually, you can group the columns together to create wider columns:</p>
+    <h1 class="text-success">Basic Grid Structure</h1>
+    <p>The first, second and third row will automatically stack on top of each other when the screen is less than 576px wide.</p>
+    <p><strong>Tip: </strong>You can turn any fixed-width layout into a <strong>full-width</strong> layout by changing the <mark>.container</mark> class to <mark>.container-fluid</mark></p>
+    <div class="container-fluid">
+      <!-- Control the column width, and how they should appear on different devices -->
+      <div class="row">
+        <!-- Two columns: 50% width on all screens, except for extra small (100% width) -->
+        <div class="col-sm-6" style="background-color:yellow;">50%</div>
+        <div class="col-sm-6" style="background-color:orange;">50%</div>
+      </div>
+      <br>
+      <div class="row">
+        <!-- Four columns: 25% width on all screens, except for extra small (100% width)-->
+        <div class="col-sm-4" style="background-color:yellow;">33.33%</div>
+        <div class="col-sm-4" style="background-color:orange;">33.33%</div>
+        <div class="col-sm-4" style="background-color:yellow;">33.33%</div>
+      </div>
+      <br>
+      <!-- Or let Bootstrap automatically handle the layout -->
+      <div class="row">
+        <div class="col-sm" style="background-color:yellow;">25%</div>
+        <div class="col-sm" style="background-color:orange;">25%</div>
+        <div class="col-sm" style="background-color:yellow;">25%</div>
+        <div class="col-sm" style="background-color:orange;">25%</div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col" style="background-color:yellow;">25%</div>
+        <div class="col" style="background-color:orange;">25%</div>
+        <div class="col" style="background-color:yellow;">25%</div>
+        <div class="col" style="background-color:orange;">25%</div>
+      </div>
+    </div>
+  </div>
+
+  <br>
   <div class="container mt-3">
     <h2 class="text-success">Filter Anything</h2>
     <p>Type something in the input field to search for a specific text inside the div element with id="myDIV":</p>
